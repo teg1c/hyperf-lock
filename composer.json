@@ -1,0 +1,39 @@
+{
+    "name": "tegic/hyperf-lock",
+    "description": "hyperf redis lock",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "tegic",
+        "email": "teg1c@foxmail.com"
+    }],
+    "require": {
+        "php": ">=7.3",
+        "hyperf/cache": "^2.1",
+        "hyperf/db-connection": "^2.1",
+        "hyperf/redis": "^2.1",
+        "hyperf/utils": "^2.1",
+        "nesbot/carbon": "^2.44"
+    },
+    "require-dev": {
+        "hyperf/di": "^2.1",
+        "hyperf/framework": "^2.1",
+        "phpstan/phpstan": "^0.12",
+        "swoole/ide-helper": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tegic\\HyperfLock\\": "src"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Tegic\\HyperfLock\\ConfigProvider"
+        }
+    },
+    "suggest": {},
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
